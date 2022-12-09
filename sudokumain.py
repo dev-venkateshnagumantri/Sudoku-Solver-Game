@@ -290,4 +290,8 @@ def main():
                     running = False
 
         board.redraw(keyDict, wrong, passedTime)
+    while True:  
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                return
 pygame.quit()

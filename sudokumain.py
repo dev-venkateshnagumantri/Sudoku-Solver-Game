@@ -135,7 +135,20 @@ class Board:
                 pygame.time.delay(63)
                 self.redraw({}, wrong, time)
 
+    def hint(self, keys):
 
+        while True: 
+            i = random.randint(0, 8)
+            j = random.randint(0, 8)
+            if self.board[i][j] == 0:  
+                if (j, i) in keys:
+                    del keys[(j, i)]
+                self.board[i][j] = self.solvedBoard[i][j]
+                self.tiles[i][j].value = self.solvedBoard[i][j]
+                return True
+            elif self.board == self.solvedBoard:
+
+                return False
 
 class Tile:
 

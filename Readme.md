@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dev-venkateshnagumantri/Sudoku-Solver-Game/tree/master/assets/thumbnail2.jpg" width="512" height="512">
+  <img src="https://github.com/dev-venkateshnagumantri/Sudoku-Solver-Game/blob/master/assets/thumbnail2.jpg" width="256" height="256" >
   <h2 align="center" style="margin-top: -4px !important;">Bored of solving Sudoku on paper? No problem, Now try to solve on your own Computer.</h2>
 </p>
 

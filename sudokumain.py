@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 from sudokutools import valid, solve, find_empty
 from copy import deepcopy
 from sys import exit
@@ -150,6 +152,7 @@ class Board:
 
                 return False
 
+
 class Tile:
 
 
@@ -193,7 +196,7 @@ def main():
 
     screen = pygame.display.set_mode((540, 590))
     screen.fill((255, 255, 255))
-    pygame.display.set_caption('Solve This Sudoku')
+    pygame.display.set_caption('Solve this Sudoku')
     icon = pygame.image.load('assets/thumbnail2.jpg')
     pygame.display.set_icon(icon)
 
@@ -307,4 +310,7 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
+
+
+main()
 pygame.quit()
